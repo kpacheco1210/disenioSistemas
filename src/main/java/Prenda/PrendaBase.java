@@ -4,15 +4,14 @@ import Prenda.Prenda;
 import Prenda.Categoria;
 import Prenda.Tipo;
 
-
 public abstract class PrendaBase implements Prenda {
     private Tipo tipo;
     private Categoria categoria;
     private String material;
-    private String colorPrimario;
-    private String colorSecundario;
+    private Color colorPrimario;
+    private Color colorSecundario;
 
-    public PrendaBase(Tipo tipo, Categoria categoria, String material, String colorPrimario, String colorSecundario) {
+    public PrendaBase(Tipo tipo, Categoria categoria, String material, Color colorPrimario, Color colorSecundario) {
         this.tipo = tipo;
         this.categoria = categoria;
         this.material = material;
